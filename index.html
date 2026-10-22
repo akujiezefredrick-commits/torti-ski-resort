@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Torti Ski Resort | Ski and snowboard school in Aspen, Colorado</title>
+<meta name="description" content="Group, private and kids ski and snowboard lessons in Aspen, Colorado. Certified instructors, groups of six or fewer, 15+ years of teaching.">
+<meta property="og:title" content="Torti Ski Resort | Ski school in Aspen">
+<meta property="og:description" content="Pick a run. We'll show you down it. Request a ski or snowboard lesson online.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 1 31 16 16 31 1 16z' fill='%23E8561C'/%3E%3Cpath d='M7 21 14 10l3 5 2-3 6 9z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- reusable level markers -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="m-green" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="#2F8F4E"/></symbol>
+  <symbol id="m-blue" viewBox="0 0 20 20"><rect x="1.5" y="1.5" width="17" height="17" rx="1" fill="#1E5FAF"/></symbol>
+  <symbol id="m-black" viewBox="0 0 20 20"><path d="M10 .5 19.5 10 10 19.5.5 10z" fill="#16202B"/></symbol>
+</svg>
+
+<div class="announce" id="announce">
+  <p>Booking Christmas, New Year, school holidays or spring break? Reserve at least 2 weeks ahead.</p>
+  <button class="announce-close" aria-label="Dismiss announcement">&times;</button>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand" aria-label="Torti Ski Resort, home">
+      <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M16 1 31 16 16 31 1 16z" fill="#E8561C"/><path d="M7 21 14 10l3 5 2-3 6 9z" fill="#fff"/></svg>
+      <span class="brand-name">Torti</span><span class="brand-sub">Ski Resort, Aspen</span>
+    </a>
+    <nav class="nav-menu" id="navMenu" aria-label="Main">
+      <a href="#lessons">Lessons</a>
+      <a href="#instructors">Instructors</a>
+      <a href="#resort">Resort info</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book" class="btn btn-solid nav-cta-mobile">Request a lesson</a>
+    </nav>
+    <a href="#book" class="btn btn-solid nav-cta">Request a lesson</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1>Pick a run.<br>We'll show you down it.</h1>
+      <p class="lead">Ski and snowboard lessons in Aspen, Colorado, with certified instructors and groups of six or fewer. Beginners, families and experts all start in the same place.</p>
+      <div class="hero-cta">
+        <a href="#book" class="btn btn-solid btn-lg">Request a lesson</a>
+        <a href="#lessons" class="btn btn-line btn-lg">See prices</a>
+      </div>
+      <p class="hero-fact">Teaching guests from around the world for over 15 years. Lessons are taught in English, with Spanish, French, Italian and German on request.</p>
+    </div>
+
+    <figure class="map" aria-label="Trail map of Torti Ski Resort. Choose a run to start a booking at that level.">
+      <svg viewBox="0 0 600 540" role="group">
+        <defs>
+          <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line x1="0" y1="0" x2="0" y2="6" stroke="#C3D7E0" stroke-width="1"/></pattern>
+        </defs>
+        <!-- mountain -->
+        <path d="M14 505 150 318 212 356 330 56 424 226 478 186 590 505Z" fill="#D5E4EB"/>
+        <path d="M14 505 150 318 212 356 330 56 424 226 478 186 590 505Z" fill="url(#hatch)"/>
+        <g fill="none" stroke="#B3CBD7" stroke-width="1.2">
+          <path d="M70 440C170 410 230 420 300 400S470 410 540 440"/>
+          <path d="M120 370C200 350 260 360 330 340S440 330 500 370"/>
+          <path d="M190 300C250 290 290 280 330 250S400 240 440 280"/>
+          <path d="M270 190C300 180 320 170 335 150S370 160 385 190"/>
+        </g>
+        <path d="M330 56 313 98 330 90 343 102 357 92z" fill="#fff"/>
+
+        <!-- lift -->
+        <g class="lift">
+          <line x1="300" y1="470" x2="330" y2="92" stroke="#16202B" stroke-width="1.6" stroke-dasharray="2 5"/>
+          <circle cx="300" cy="470" r="4" fill="#16202B"/><circle cx="330" cy="92" r="4" fill="#16202B"/>
+        </g>
+        <text x="346" y="236" class="map-note" transform="rotate(83 346 236)">Silver Peak Gondola</text>
+
+        <!-- runs -->
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path class="run r-black" pathLength="1" d="M326 98C292 152 366 186 312 240S238 330 252 392 262 440 268 468" stroke="#16202B" stroke-width="5.5"/>
+          <path class="run r-blue" pathLength="1" d="M424 232C486 280 392 312 438 360S386 424 336 470" stroke="#1E5FAF" stroke-width="5.5"/>
+          <path class="run r-green" pathLength="1" d="M206 346C132 372 224 404 156 428S196 468 270 478" stroke="#2F8F4E" stroke-width="5.5"/>
+        </g>
+
+        <!-- base -->
+        <g>
+          <rect x="268" y="468" width="64" height="30" fill="#E8561C"/>
+          <path d="M268 468 300 452l32 16z" fill="#E8561C"/>
+        </g>
+        <text x="300" y="518" class="map-label" text-anchor="middle">Ski School Building</text>
+        <text x="418" y="496" class="map-note">Alpine Café</text>
+
+        <!-- magic carpet + cubs -->
+        <line x1="62" y1="470" x2="118" y2="446" stroke="#E8561C" stroke-width="3" stroke-dasharray="7 4"/>
+        <text x="30" y="494" class="map-note">Snow Cubs Learning Zone</text>
+
+        <!-- run links -->
+        <a href="#book" class="run-link" data-level="Advanced" aria-label="Advanced runs, black diamond. Start a booking">
+          <rect class="hit" x="326" y="96" width="150" height="38" rx="4"/>
+          <use href="#m-black" x="334" y="105" width="20" height="20"/><text x="362" y="120" class="map-label">Advanced</text>
+        </a>
+        <a href="#book" class="run-link" data-level="Intermediate" aria-label="Intermediate runs, blue square. Start a booking">
+          <rect class="hit" x="430" y="236" width="160" height="38" rx="4"/>
+          <use href="#m-blue" x="438" y="245" width="20" height="20"/><text x="466" y="260" class="map-label">Intermediate</text>
+        </a>
+        <a href="#book" class="run-link" data-level="Beginner" aria-label="Beginner runs, green circle. Start a booking">
+          <rect class="hit" x="28" y="318" width="150" height="38" rx="4"/>
+          <use href="#m-green" x="36" y="327" width="20" height="20"/><text x="64" y="342" class="map-label">Beginner</text>
+        </a>
+
+        <circle class="skier" r="6.5" fill="#E8561C" stroke="#fff" stroke-width="2"/>
+      </svg>
+      <figcaption>Choose a run to start your request at that level.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- LESSONS -->
+<section class="band" id="lessons">
+  <div class="wrap">
+    <div class="band-head">
+      <h2>Lessons and prices</h2>
+      <p>Ski passes are not included. Rent gear at Summit Gear Rentals, and get fitted the day before.</p>
+    </div>
+
+    <div class="board">
+      <article class="row">
+        <div class="row-main">
+          <h3>Group lessons</h3>
+          <p>Beginner, Intermediate or Advanced, grouped by ability. Six guests at most.</p>
+          <span class="levels" aria-label="All three levels"><svg><use href="#m-green"/></svg><svg><use href="#m-blue"/></svg><svg><use href="#m-black"/></svg></span>
+        </div>
+        <dl class="prices">
+          <div><dt>Adults, 13 and over</dt><dd>$65</dd></div>
+          <div><dt>Children, 5 to 12</dt><dd>$60</dd></div>
+          <p class="unit">per person, per half-day session</p>
+        </dl>
+        <a href="#book" class="row-go" data-pick="Group lesson">Request a group lesson</a>
+      </article>
+
+      <article class="row">
+        <div class="row-main">
+          <h3>Private lessons</h3>
+          <p>Technique, confidence, mountain skills or freestyle. Flexible times, one hour minimum. A good fit for families with mixed abilities. Ask about hotel pick-up.</p>
+        </div>
+        <dl class="prices">
+          <div><dt>1 to 2 guests</dt><dd>$140</dd></div>
+          <div><dt>3 to 4 guests</dt><dd>$175</dd></div>
+          <div><dt>5 to 6 guests</dt><dd>$210</dd></div>
+          <p class="unit">per hour</p>
+        </dl>
+        <a href="#book" class="row-go" data-pick="Private lesson">Request a private lesson</a>
+      </article>
+
+      <article class="row">
+        <div class="row-main">
+          <h3>Mountain Kids Program</h3>
+          <p>Ages 5 to 12, 9:00 to 16:30. Lunch supervision, outdoor learning activities and supervised breaks are included. Meet at Snow Cubs Learning Zone.</p>
+        </div>
+        <dl class="prices">
+          <div><dt>Per child</dt><dd>$99</dd></div>
+          <p class="unit">per day</p>
+        </dl>
+        <a href="#book" class="row-go" data-pick="Mountain Kids Program">Request the kids program</a>
+      </article>
+
+      <article class="row row-save">
+        <div class="row-main">
+          <h3>Multi-day group packages</h3>
+          <p>Staying longer? Book consecutive days and save. Private lesson packages of 3 or more days get 10% off.</p>
+        </div>
+        <dl class="prices">
+          <div><dt>3 days <em>save $20</em></dt><dd>$175</dd></div>
+          <div><dt>5 days <em>save $60</em></dt><dd>$265</dd></div>
+          <div><dt>6 days <em>save $90</em></dt><dd>$299</dd></div>
+          <p class="unit">per person</p>
+        </dl>
+        <a href="#book" class="row-go" data-pick="Group lesson">Request a package</a>
+      </article>
+    </div>
+
+    <div class="sessions">
+      <h3>Session times</h3>
+      <dl>
+        <div><dt>Morning</dt><dd>9:00 to 12:00</dd></div>
+        <div><dt>Afternoon</dt><dd>13:30 to 16:30</dd></div>
+        <div><dt>Full day</dt><dd>9:00 to 16:30, lunch break 12:00 to 13:30</dd></div>
+        <div><dt>Private</dt><dd>Flexible, from 1 hour</dd></div>
+      </dl>
+      <p>Off-piste and specialist lessons are quoted individually. Add it to your special requirements and the team will reply with a price.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INSTRUCTORS -->
+<section class="band band-snow" id="instructors">
+  <div class="wrap">
+    <div class="band-head">
+      <h2>The instructors</h2>
+      <p>Every instructor is certified (PSIA Level 2+, BASI Level 2+ or equivalent), background checked and trained in guest safety. Request one and we'll note it as a preference. We can't guarantee a specific instructor.</p>
+    </div>
+    <ul class="roster">
+      <li>
+        <h3>Ethan</h3>
+        <p class="spec">First-time skiers and building confidence</p>
+        <p class="bio">Friendly and patient, with a relaxed classroom on snow. Worked as an outdoor adventure guide before teaching.</p>
+        <p class="langs">English, Spanish</p>
+        <span class="levels" role="img" aria-label="Beginner"><svg><use href="#m-green"/></svg></span>
+      </li>
+      <li>
+        <h3>Elena</h3>
+        <p class="spec">Intermediate progress and overcoming hesitation</p>
+        <p class="bio">Calm and supportive. A certified fitness and mobility coach in the summer.</p>
+        <p class="langs">English, Spanish, French</p>
+        <span class="levels" role="img" aria-label="Intermediate"><svg><use href="#m-blue"/></svg></span>
+      </li>
+      <li>
+        <h3>Isabelle</h3>
+        <p class="spec">Advanced skiing, carving and mountain technique</p>
+        <p class="bio">Detail-oriented and analytical. Spent several seasons coaching junior race athletes.</p>
+        <p class="langs">English, French, German</p>
+        <span class="levels" role="img" aria-label="Advanced"><svg><use href="#m-black"/></svg></span>
+      </li>
+      <li>
+        <h3>Luca</h3>
+        <p class="spec">Families and younger skiers</p>
+        <p class="bio">Energetic and engaging, keeps lessons playful. Previously worked at children's outdoor camps.</p>
+        <p class="langs">English, Italian, French</p>
+        <span class="levels" role="img" aria-label="Beginner and intermediate"><svg><use href="#m-green"/></svg><svg><use href="#m-blue"/></svg></span>
+      </li>
+      <li>
+        <h3>Ryan</h3>
+        <p class="spec">Snowboarding, all abilities</p>
+        <p class="bio">Relaxed and approachable, popular with teens and adult riders. Loves terrain parks and mountain photography.</p>
+        <p class="langs">English</p>
+        <span class="levels" role="img" aria-label="All levels"><svg><use href="#m-green"/></svg><svg><use href="#m-blue"/></svg><svg><use href="#m-black"/></svg></span>
+      </li>
+    </ul>
+    <p class="fine">We don't publish individual instructor reviews. After your lesson you can share feedback in our guest survey.</p>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="book" id="book">
+  <div class="wrap book-grid">
+    <div class="book-intro">
+      <h2>Request a lesson</h2>
+      <p>Tell us what you'd like in four short steps. This sends a request, not a booking. Our reservations team will email your confirmation within 2 hours, with payment instructions inside.</p>
+      <ul>
+        <li>No gear? Summit Gear Rentals can fit you the day before.</li>
+        <li>You'll need your own ski pass. Prices are under Resort info.</li>
+        <li>Cancel 48 hours or more ahead for a full refund.</li>
+      </ul>
+    </div>
+
+    <form class="form" id="bookingForm" novalidate>
+      <ol class="steps" id="steps">
+        <li class="on">Lesson</li><li>Date</li><li>Guests</li><li>Review</li>
+      </ol>
+
+      <fieldset class="step show" data-step="1">
+        <legend>What do you want to learn?</legend>
+        <label>Lesson type
+          <select name="lesson_type" required>
+            <option value="">Choose a lesson</option>
+            <option>Group lesson</option>
+            <option>Private lesson</option>
+            <option>Mountain Kids Program</option>
+          </select>
+        </label>
+        <div class="field">
+          <span class="field-label">Activity</span>
+          <div class="seg">
+            <label><input type="radio" name="activity" value="Skiing" checked><span>Skiing</span></label>
+            <label><input type="radio" name="activity" value="Snowboarding"><span>Snowboarding</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <span class="field-label">Level</span>
+          <div class="levelpick" id="levelPick">
+            <label><input type="radio" name="level" value="Beginner"><span><svg><use href="#m-green"/></svg>Beginner</span></label>
+            <label><input type="radio" name="level" value="Intermediate"><span><svg><use href="#m-blue"/></svg>Intermediate</span></label>
+            <label><input type="radio" name="level" value="Advanced"><span><svg><use href="#m-black"/></svg>Advanced</span></label>
+          </div>
+        </div>
+        <p class="hint" id="step1Hint"></p>
+      </fieldset>
+
+      <fieldset class="step" data-step="2">
+        <legend>When do you want to ski?</legend>
+        <label>Date <input type="date" name="date" required></label>
+        <label>Time <select name="time" required id="timeSelect"></select></label>
+        <label>Number of guests
+          <select name="guests" required id="guestSelect">
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+          </select>
+        </label>
+        <p class="hint">Groups are limited to 6 guests. Peak weeks fill quickly.</p>
+      </fieldset>
+
+      <fieldset class="step" data-step="3">
+        <legend>Who's coming?</legend>
+        <div id="participants"></div>
+        <label>Contact email <input type="email" name="email" placeholder="you@example.com" required></label>
+        <label>Instructor preference <span class="opt">optional, not guaranteed</span>
+          <select name="instructor">
+            <option value="">No preference</option>
+            <option>Ethan</option><option>Isabelle</option><option>Luca</option><option>Elena</option><option>Ryan</option>
+          </select>
+        </label>
+        <label>Special requirements <span class="opt">goals, medical considerations, language, hotel pick-up</span>
+          <textarea name="special" rows="3"></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset class="step" data-step="4">
+        <legend>Check your request</legend>
+        <dl class="review" id="review"></dl>
+        <p class="estimate" id="estimate"></p>
+        <details class="record"><summary>Reservation record</summary><pre id="record"></pre></details>
+      </fieldset>
+
+      <p class="error" id="formError" role="alert"></p>
+      <div class="form-actions">
+        <button type="button" class="btn btn-line-dark" id="prevBtn">Back</button>
+        <button type="button" class="btn btn-solid" id="nextBtn">Continue</button>
+      </div>
+    </form>
+
+    <div class="success" id="success" hidden>
+      <h3>Request sent</h3>
+      <p>Thanks, <span id="succName">there</span>. Our reservations team will email your booking confirmation within 2 hours. Payment instructions are in that email.</p>
+      <p class="fine">Your lesson isn't confirmed until you receive it. Cancel 48 hours or more ahead for a full refund, 24 to 48 hours for 50%, under 24 hours for none. If weather cancels a lesson, you can reschedule or take a full refund.</p>
+      <button class="btn btn-solid" id="againBtn">Make another request</button>
+    </div>
+  </div>
+</section>
+
+<!-- RESORT INFO -->
+<section class="band" id="resort">
+  <div class="wrap">
+    <div class="band-head">
+      <h2>Resort info</h2>
+      <p>Everything to sort before you arrive.</p>
+    </div>
+    <div class="info-grid">
+      <section>
+        <h3>Where to meet</h3>
+        <dl class="facts">
+          <dt>Adults and teens</dt><dd>Outside the Ski School Building, next to the Silver Peak Gondola and opposite Alpine Café.</dd>
+          <dt>Kids</dt><dd>Snow Cubs Learning Zone, beside the Beginner Magic Carpet Area.</dd>
+          <dt>Arrive</dt><dd>10 minutes before your lesson. Look for the Torti branded jackets.</dd>
+        </dl>
+      </section>
+      <section>
+        <h3>Ski passes</h3>
+        <dl class="facts passes">
+          <dt>Day pass</dt><dd class="amt">$95</dd>
+          <dt>6-day pass</dt><dd class="amt">$499</dd>
+          <dt>Season pass</dt><dd class="amt">$1,199</dd>
+        </dl>
+        <p class="fine">Children under 6 ski free. Passes are not included in lesson prices. Buy at the Resort Ticket Office or at <a href="https://www.tortiskiresort.com" target="_blank" rel="noopener">tortiskiresort.com</a>.</p>
+      </section>
+      <section>
+        <h3>Getting here</h3>
+        <dl class="facts">
+          <dt>Shuttle</dt><dd>Free, every 15 minutes between Aspen Village, Mountain Base and Downtown Plaza. Get off at Silver Peak Station.</dd>
+          <dt>Parking</dt><dd>North Mountain Parking Garage, $20 per day.</dd>
+        </dl>
+      </section>
+      <section>
+        <h3>What to bring</h3>
+        <ul class="bring">
+          <li>Skis or a snowboard (or rent them)</li>
+          <li>Warm layers and gloves</li>
+          <li>Goggles and sunscreen</li>
+          <li>A valid ski pass</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="band band-snow" id="faq">
+  <div class="wrap faq-grid">
+    <div class="band-head">
+      <h2>Questions</h2>
+      <p>Can't find your answer? Ask the team when you send your request.</p>
+    </div>
+    <div class="faq">
+      <details><summary>Is a ski pass included?</summary><p>No. Ski passes are separate and must be bought before your lesson starts.</p></details>
+      <details><summary>Which lesson should I choose?</summary><p>Complete beginners do well in a beginner group, or in a private lesson for faster progress. Families with mixed abilities often choose private lessons so everyone stays together. Experienced skiers can join intermediate or advanced groups, or book private coaching.</p></details>
+      <details><summary>What if I need to cancel?</summary><p>48 hours or more: full refund. 24 to 48 hours: 50% refund. Under 24 hours: no refund. If weather cancels your lesson, reschedule or take a full refund.</p></details>
+      <details><summary>Can I choose my instructor?</summary><p>You can ask. We'll note it as a preference and do our best, but we can't guarantee a specific instructor because it depends on scheduling.</p></details>
+      <details><summary>Which languages do you teach in?</summary><p>English as standard. Spanish, French, Italian and German are available on request.</p></details>
+      <details><summary>Who do I contact about safety or injuries?</summary><p>On the mountain, contact ski patrol. Put any medical considerations in your special requirements when you book.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a href="#top" class="brand brand-light"><span class="brand-name">Torti</span><span class="brand-sub">Ski Resort, Aspen</span></a>
+        <p>A premium ski and snowboard school in Aspen, Colorado.</p>
+      </div>
+      <form id="newsForm" class="news-form" novalidate>
+        <label for="newsEmail">Get resort news by email</label>
+        <div><input id="newsEmail" type="email" placeholder="you@example.com" required><button class="btn btn-solid">Subscribe</button></div>
+      </form>
+    </div>
+    <p class="copy">&copy; <span id="year"></span> Torti Ski Resort</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><strong id="toastTitle"></strong><span id="toastMsg"></span></div>
+<script src="script.js"></script>
+
+<!-- Voiceflow chat assistant -->
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6ada6eb52bb20c1a7b1eb550' },
+          url: 'https://general-runtime.voiceflow.com',
+          voice: {
+            url: 'https://runtime-api.voiceflow.com'
+          }
+        });
+      }
+      v.src = 'https://cdn.voiceflow.com/widget-next/bundle.mjs'; v.type = 'text/javascript'; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+</body>
+</html>
